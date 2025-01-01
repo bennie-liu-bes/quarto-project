@@ -1,0 +1,174 @@
+project:
+  # 輸出檔案放到_output資料夾
+  output-dir: _output
+
+###############
+### 全域設定 ###
+###############
+
+# Title & Author/標題與作者
+title: ''
+subtitle: ''
+author: ''
+abstract: ''
+abstract-title: ''
+thanks: ''
+date: last-modified
+date-format: '更新時間：YYYY年MM月DD日'
+
+# Table of Contents/目錄設定
+toc: true
+toc-depth: 3
+toc-title: '目錄'
+
+# Numbering/章節編號設定
+number-sections: true # 啟用章節編號
+number-depth: 2 # 編號深度到第3層
+number-offset: 0 # 編號起始值(0表示從1開始)
+shift-heading-level-by: 0 # 標題層級偏移量(0表示不偏移)
+
+# Font/字型設定
+mainfont: 'Microsoft JhengHei' # 使用微軟正黑體作為主要字型，支援中文顯示
+fontsize: 14pt # 設定文件字體大小為12點
+
+# Execute/執行設定
+execute:
+    eval: true
+    echo: true
+    output: true
+    warning: false
+    error: false
+
+###############
+### 輸出格式 ###
+###############
+
+format:
+    html:
+        # Format Options/格式選項
+        theme: default # https://quarto.org/docs/output-formats/html-themes.html
+        tabsets: false
+        smooth-scroll: true
+        
+        # Table of Contents/目錄設定
+        toc-location: left
+        toc-expand: true
+
+        # Colors/顏色設定
+        fontcolor: black
+        linkcolor: blue
+
+        # Layout/版面設定
+        cap-location: bottom
+        fig-cap-location: bottom
+        tbl-cap-location: bottom
+        page-layout: article # The page layout to use for this document (article, full, or custom)
+        grid:
+            sidebar-width: 250px
+            body-width: 800px
+            gutter-width: 1.5em
+            margin-width: 250px
+        
+        # Code/程式碼設定
+        code-fold: true
+        code-line-numbers: true
+        code-copy: true
+        code-annotations: true
+        highlight-style: arrow
+
+        # Figures/圖片設定
+        fig-align: center # 設定圖片對齊方式為置中
+        fig-width: 6 # 設定圖片寬度為6英寸
+        fig-height: 4 # 設定圖片高度為4英寸
+        fig-format: png # 設定圖片格式為png
+
+        # Lightbox Figures/圖片燈箱設定
+        lightbox: true
+
+        # Tables/表格設定
+        tbl-colwidths: auto # 設定表格欄寬度為自動
+        df-print: kable
+
+
+    docx:
+        # 使用自定義的template.docx作為參考文獻
+        reference-doc: 智慧決策平台使用說明_範本.docx
+
+        # Links/連結
+        colorlinks: true # 啟用彩色連結(若為false則使用方框標示)
+        toccolor: blue # 目錄連結顏色
+        linkcolor: red # 內文連結顏色(如章節引用等)
+        urlcolor: green # 網址連結顏色
+
+        # Layout/版面設定
+        page-width: 6.5
+
+        # Code/程式碼設定
+        code-annotations: true
+        highlight-style: arrow
+
+        # Figures/圖片設定
+        fig-align: center # 設定圖片對齊方式為置中
+        fig-width: 6 # 設定圖片寬度為6英寸
+        fig-height: 4 # 設定圖片高度為4英寸
+        fig-format: png # 設定圖片格式為png
+
+        # Tables/表格設定
+        tbl-colwidths: auto # 設定表格欄寬度為自動
+        tbl-cap-location: top # 設定表格標題位置為上方
+    pdf:
+        # Table of Contents/目錄設定
+        lof: true # 顯示圖片目錄(List of Figures)
+        lot: true # 顯示表格目錄(List of Tables)
+        
+        # Links/連結
+        colorlinks: true # 啟用彩色連結(若為false則使用方框標示)
+        toccolor: blue # 目錄連結顏色
+        linkcolor: red # 內文連結顏色(如章節引用等)
+        urlcolor: green # 網址連結顏色
+    
+        # Layout/版面設定
+        cap-location: top # 圖表標題位置(top, bottom, or margin)
+        fig-cap-location: top # 圖表標題位置(top, bottom, or margin)
+        tbl-cap-location: top # 表格標題位置(top, bottom, or margin)
+        # documentclass 主要選項:
+        # article - 適合短篇文章
+        # report - 適合較長的報告，有章節結構
+        # book - 適合書籍，有前言、章節等完整結構
+        documentclass: report
+        classoption: [onecolumn, portrait, 12pt, a4paper, twoside, openright]
+        geometry:
+          - top=25mm
+          - bottom=25mm
+          - left=25mm
+          - right=25mm
+          - heightrounded # 自動調整頁面高度,確保每頁高度一致
+    
+        # Code/程式碼設定
+        code-line-numbers: true # 啟用行號
+        code-annotations: true # 啟用註解
+        code-block-border-left: true # 啟用左邊框線
+        highlight-style: github # 使用github風格的程式碼高亮
+    
+        # Execute/執行設定
+        execute:
+          eval: true
+          echo: true
+          output: true
+          warning: false
+          error: false
+    
+        # Figures/圖片設定
+        fig-align: center # 設定圖片對齊方式為置中
+        fig-width: 6 # 設定圖片寬度為6英寸
+        fig-height: 4 # 設定圖片高度為4英寸
+        fig-format: png # 設定圖片格式為png
+    
+        # Tables/表格設定
+        tbl-colwidths: auto # 設定表格欄寬度為自動
+    
+        # Footnotes/註腳設定
+        reference-location: document
+
+# docx檔案中讓圖片markdown fig-align生效(要有caption)
+from: markdown-implicit_figures

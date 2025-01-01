@@ -1,0 +1,40 @@
+---
+title: |
+   中華工程-影音即時指揮中心 \
+   智慧決策平台
+subtitle: 使用說明手冊
+# formats: html, docx, pdf
+format: docx
+---
+
+{{< pagebreak >}}
+
+# 登入說明
+
+## 由中華工程首頁左側導覽進入智慧決策平台。
+
+![中工首頁](images/智慧決策平台使用說明/image01.png){height="8cm"}
+
+{{< pagebreak >}}
+
+## 輸入帳號密碼
+
+帳號為員工工號，例如: 226178
+
+預設密碼格式為"bes\@工號"，例如: bes\@226178
+
+![&nbsp;](images/智慧決策平台使用說明/image02.png){height="8cm"}
+
+如果無法登入顯示帳號或密碼錯誤，請點擊**忘記密碼**進行驗證並修改密碼後重新登入。
+
+{{< pagebreak >}}
+
+## 首頁說明
+
+首頁右上角點擊選單可切換全螢幕模式，有較好的瀏覽體驗。
+
+![&nbsp;](images/智慧決策平台使用說明/image03.png){height="8cm"}
+
+全螢幕模式
+
+![&nbsp;](images/智慧決策平台使用說明/image04.png){height="8cm"}
