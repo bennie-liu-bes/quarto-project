@@ -1,10 +1,10 @@
 ---
 title: |
-   中華工程-影音即時指揮中心 \
-   智慧決策平台
+  中華工程-影音即時指揮中心 \
+  智慧決策平台
 subtitle: 使用說明手冊
-# formats: html, docx, pdf
-format: docx
+formats: html, docx, pdf
+jupyter: python3
 ---
 
 {{< pagebreak >}}
@@ -13,7 +13,7 @@ format: docx
 
 ## 由中華工程首頁左側導覽進入智慧決策平台。
 
-![中工首頁](images/智慧決策平台使用說明/image01.png){height="8cm"}
+![中工首頁](images/智慧決策平台使用說明/中工首頁.png){height="8cm"}
 
 {{< pagebreak >}}
 
@@ -23,18 +23,136 @@ format: docx
 
 預設密碼格式為"bes\@工號"，例如: bes\@226178
 
-![&nbsp;](images/智慧決策平台使用說明/image02.png){height="8cm"}
+![&nbsp;](images/智慧決策平台使用說明/登入畫面.png){height="8cm"}
 
 如果無法登入顯示帳號或密碼錯誤，請點擊**忘記密碼**進行驗證並修改密碼後重新登入。
 
 {{< pagebreak >}}
 
-## 首頁說明
+## {{< animate bounce "首頁說明" repeat=infinite duration=4s >}}
 
 首頁右上角點擊選單可切換全螢幕模式，有較好的瀏覽體驗。
 
-![&nbsp;](images/智慧決策平台使用說明/image03.png){height="8cm"}
+![&nbsp;](images/智慧決策平台使用說明/平台首頁.png){height="8cm"}
 
 全螢幕模式
 
-![&nbsp;](images/智慧決策平台使用說明/image04.png){height="8cm"}
+![&nbsp;](images/智慧決策平台使用說明/平台全螢幕.png){height="8cm"}
+
+# plugin-文字動畫
+
+- {{< animate hinge "hinge" delay=3s duration=4s repeat=infinite >}}
+
+# 使用R語言
+
+```{r}
+library(ggplot2)
+dat <- data.frame(
+  cond = rep(c("A", "B"), each = 10),
+  xvar = 1:20 + rnorm(20, sd = 3),
+  yvar = 1:20 + rnorm(20, sd = 3)
+)
+
+ggplot(dat, aes(x = xvar, y = yvar)) +
+  geom_point(shape = 1) +
+  geom_smooth()
+```
+
+# 使用Python
+
+```{python}
+# | label: fig-polar
+# | fig-cap: "A line plot on a polar axis"
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(
+    subplot_kw={'projection': 'polar'}
+)
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+```
+
+# 代碼輸出
+
+```{{python}}
+1 + 1
+```
+
+````
+---
+title: "My document"
+---
+
+Some markdown content.
+
+```{{python}}
+1 + 1
+```
+
+Some additional markdown content.
+
+````
+
+# callout
+
+::: {.callout-note}
+Note that there are five types of callouts, including:
+`note`, `warning`, `important`, `tip`, and `caution`.
+:::
+
+# 輸出表格
+
+```{python}
+import code.FUN as FUN
+from itables import show
+df = FUN.progress_table()
+
+show(df, searching=False)
+
+df
+
+```
+
+# R flextable docx表格輸出
+
+```{r}
+library(flextable)
+ft <- flextable(airquality[sample.int(10), ])
+ft <- add_header_row(ft,
+  colwidths = c(4, 2),
+  values = c("Air quality", "Time")
+)
+ft <- theme_vanilla(ft)
+ft <- add_footer_lines(ft, "Daily air quality measurements in New York, May to September 1973.")
+ft <- color(ft, part = "footer", color = "#666666")
+ft <- set_caption(ft, caption = "New York Air Quality Measurements")
+ft
+```
+
+# Python tabulate表格輸出
+
+```{python}
+#| label: tbl-dates
+#| tbl-cap: Years and locations.
+#| echo: FALSE
+
+import pandas as pd
+from tabulate import tabulate
+from IPython.display import Markdown
+
+# define values
+field_ops = (pd.DataFrame({
+    "Season": ['2020', '2021'],
+    "Location": ["Loc1", "Loc2"]}))
+
+Markdown(tabulate(
+    field_ops, headers="keys", showindex=False, tablefmt="pipe"))
+
+``` 
+

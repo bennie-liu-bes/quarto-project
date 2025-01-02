@@ -1,6 +1,6 @@
 project:
-  # 輸出檔案放到_output資料夾
-  output-dir: _output
+    # 輸出檔案放到_output資料夾
+    output-dir: _output
 
 ###############
 ### 全域設定 ###
@@ -49,7 +49,7 @@ format:
         theme: default # https://quarto.org/docs/output-formats/html-themes.html
         tabsets: false
         smooth-scroll: true
-        
+
         # Table of Contents/目錄設定
         toc-location: left
         toc-expand: true
@@ -62,18 +62,22 @@ format:
         cap-location: bottom
         fig-cap-location: bottom
         tbl-cap-location: bottom
-        page-layout: article # The page layout to use for this document (article, full, or custom)
+        page-layout: full # The page layout to use for this document (article, full, or custom)
         grid:
             sidebar-width: 250px
             body-width: 800px
             gutter-width: 1.5em
             margin-width: 250px
-        
+
         # Code/程式碼設定
         code-fold: true
         code-line-numbers: true
         code-copy: true
         code-annotations: true
+        code-overflow: wrap
+        code-tools: true
+        # code-block-bg: true
+        # code-block-border-left: '#31BAE9'
         highlight-style: arrow
 
         # Figures/圖片設定
@@ -89,6 +93,8 @@ format:
         tbl-colwidths: auto # 設定表格欄寬度為自動
         df-print: kable
 
+        filters:
+            - code-fullscreen
 
     docx:
         # 使用自定義的template.docx作為參考文獻
@@ -114,19 +120,22 @@ format:
         fig-format: png # 設定圖片格式為png
 
         # Tables/表格設定
-        tbl-colwidths: auto # 設定表格欄寬度為自動
-        tbl-cap-location: top # 設定表格標題位置為上方
+        df-print: tibble
+
+        # docx檔案中讓圖片markdown fig-align生效(要有caption)
+        from: markdown-implicit_figures
+
     pdf:
         # Table of Contents/目錄設定
         lof: true # 顯示圖片目錄(List of Figures)
         lot: true # 顯示表格目錄(List of Tables)
-        
+
         # Links/連結
         colorlinks: true # 啟用彩色連結(若為false則使用方框標示)
         toccolor: blue # 目錄連結顏色
         linkcolor: red # 內文連結顏色(如章節引用等)
         urlcolor: green # 網址連結顏色
-    
+
         # Layout/版面設定
         cap-location: top # 圖表標題位置(top, bottom, or margin)
         fig-cap-location: top # 圖表標題位置(top, bottom, or margin)
@@ -138,37 +147,34 @@ format:
         documentclass: report
         classoption: [onecolumn, portrait, 12pt, a4paper, twoside, openright]
         geometry:
-          - top=25mm
-          - bottom=25mm
-          - left=25mm
-          - right=25mm
-          - heightrounded # 自動調整頁面高度,確保每頁高度一致
-    
+            - top=25mm
+            - bottom=25mm
+            - left=25mm
+            - right=25mm
+            - heightrounded # 自動調整頁面高度,確保每頁高度一致
+
         # Code/程式碼設定
         code-line-numbers: true # 啟用行號
         code-annotations: true # 啟用註解
         code-block-border-left: true # 啟用左邊框線
         highlight-style: github # 使用github風格的程式碼高亮
-    
+
         # Execute/執行設定
         execute:
-          eval: true
-          echo: true
-          output: true
-          warning: false
-          error: false
-    
+            eval: true
+            echo: true
+            output: true
+            warning: false
+            error: false
+
         # Figures/圖片設定
         fig-align: center # 設定圖片對齊方式為置中
         fig-width: 6 # 設定圖片寬度為6英寸
         fig-height: 4 # 設定圖片高度為4英寸
         fig-format: png # 設定圖片格式為png
-    
+
         # Tables/表格設定
         tbl-colwidths: auto # 設定表格欄寬度為自動
-    
+
         # Footnotes/註腳設定
         reference-location: document
-
-# docx檔案中讓圖片markdown fig-align生效(要有caption)
-from: markdown-implicit_figures

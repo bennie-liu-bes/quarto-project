@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.39">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -21,30 +21,73 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="智慧決策平台使用說明_files/libs/clipboard/clipboard.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="智慧決策平台使用說明_files/libs/clipboard/clipboard.min.js"></script>
 <script src="智慧決策平台使用說明_files/libs/quarto-html/quarto.js"></script>
 <script src="智慧決策平台使用說明_files/libs/quarto-html/popper.min.js"></script>
 <script src="智慧決策平台使用說明_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="智慧決策平台使用說明_files/libs/quarto-html/anchor.min.js"></script>
 <link href="智慧決策平台使用說明_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="智慧決策平台使用說明_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="智慧決策平台使用說明_files/libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="智慧決策平台使用說明_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="智慧決策平台使用說明_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="智慧決策平台使用說明_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="智慧決策平台使用說明_files/libs/bootstrap/bootstrap-d04855bc54c613d06206840b71223610.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="智慧決策平台使用說明_files/libs/quarto-contrib/jquery-3.6.3/jquery-3.6.3.min.js"></script>
+<script src="智慧決策平台使用說明_files/libs/quarto-contrib/code-fullscreen-1.0.0/code-fullscreen.js" defer="true"></script>
+<link href="智慧決策平台使用說明_files/libs/quarto-contrib/code-fullscreen-1.0.0/code-fullscreen.css" rel="stylesheet">
+<link href="智慧決策平台使用說明_files/libs/quarto-contrib/animate-4.1.1/animate.min.css" rel="stylesheet">
 <script src="智慧決策平台使用說明_files/libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="智慧決策平台使用說明_files/libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="智慧決策平台使用說明_files/libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <style>html{ scroll-behavior: smooth; }</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+<style>:root{--animate-duration:3s;--animate-delay:2s;--animate-repeat:1}</style>
+<style>:root{--animate-duration:3s;--animate-delay:2s;--animate-repeat:1}</style>
 
 
 </head>
 
 <body>
 
-<div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-full toc-left">
 <div id="quarto-sidebar-toc-left" class="sidebar toc-left">
   <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">目錄</h2>
@@ -54,31 +97,38 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#由中華工程首頁左側導覽進入智慧決策平台" id="toc-由中華工程首頁左側導覽進入智慧決策平台" class="nav-link" data-scroll-target="#由中華工程首頁左側導覽進入智慧決策平台"><span class="header-section-number">1.1</span> 由中華工程首頁左側導覽進入智慧決策平台。</a></li>
   <li><a href="#輸入帳號密碼" id="toc-輸入帳號密碼" class="nav-link" data-scroll-target="#輸入帳號密碼"><span class="header-section-number">1.2</span> 輸入帳號密碼</a></li>
-  <li><a href="#首頁說明" id="toc-首頁說明" class="nav-link" data-scroll-target="#首頁說明"><span class="header-section-number">1.3</span> 首頁說明</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"><span class="header-section-number">1.3</span> <span class="animate__animated animate__bounce animate__infinite" style="display: inline-block;animation-duration:4s">首頁說明</span></a></li>
   </ul></li>
+  <li><a href="#plugin-文字動畫" id="toc-plugin-文字動畫" class="nav-link" data-scroll-target="#plugin-文字動畫"><span class="header-section-number">2</span> plugin-文字動畫</a></li>
+  <li><a href="#使用r語言" id="toc-使用r語言" class="nav-link" data-scroll-target="#使用r語言"><span class="header-section-number">3</span> 使用R語言</a></li>
+  <li><a href="#使用python" id="toc-使用python" class="nav-link" data-scroll-target="#使用python"><span class="header-section-number">4</span> 使用Python</a></li>
+  <li><a href="#代碼輸出" id="toc-代碼輸出" class="nav-link" data-scroll-target="#代碼輸出"><span class="header-section-number">5</span> 代碼輸出</a></li>
+  <li><a href="#callout" id="toc-callout" class="nav-link" data-scroll-target="#callout"><span class="header-section-number">6</span> callout</a></li>
+  <li><a href="#輸出表格" id="toc-輸出表格" class="nav-link" data-scroll-target="#輸出表格"><span class="header-section-number">7</span> 輸出表格</a></li>
+  <li><a href="#r-flextable-docx表格輸出" id="toc-r-flextable-docx表格輸出" class="nav-link" data-scroll-target="#r-flextable-docx表格輸出"><span class="header-section-number">8</span> R flextable docx表格輸出</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="智慧決策平台使用說明.docx"><i class="bi bi-file-word"></i>MS Word</a></li><li><a href="智慧決策平台使用說明.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="智慧決策平台使用說明.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
 </div>
 <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
 </div>
-<main class="content" id="quarto-document-content">
+<main class="content column-page-right" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><p>中華工程-影音即時指揮中心<br>
-智慧決策平台</p></h1>
+<div class="quarto-title-block"><div><h1 class="title"><p>中華工程-影音即時指揮中心<br>
+智慧決策平台</p></h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
 <p class="subtitle lead">使用說明手冊</p>
 </div>
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page-right">
 
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">更新時間：2025年01月01日</p>
+      <p class="date">更新時間：2025年01月02日</p>
     </div>
   </div>
   
@@ -95,14 +145,10 @@ ul.task-list li input[type="checkbox"] {
 <h1 data-number="1"><span class="header-section-number">1</span> 登入說明</h1>
 <section id="由中華工程首頁左側導覽進入智慧決策平台" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="由中華工程首頁左側導覽進入智慧決策平台"><span class="header-section-number">1.1</span> 由中華工程首頁左側導覽進入智慧決策平台。</h2>
-<div id="fig-539a35d47e664c97a50115a146a7f1bd-1" class="quarto-float quarto-figure quarto-figure-center anchored" height="8cm">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-539a35d47e664c97a50115a146a7f1bd-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/智慧決策平台使用說明/image01.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title=": 中工首頁"><img src="images/智慧決策平台使用說明/image01.png" id="fig-539a35d47e664c97a50115a146a7f1bd-1" style="height:8cm" class="figure-img"></a>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-539a35d47e664c97a50115a146a7f1bd-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-中工首頁
-</figcaption>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/智慧決策平台使用說明/中工首頁.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="中工首頁"><img src="images/智慧決策平台使用說明/中工首頁.png" style="height:8cm" alt="中工首頁" class="figure-img"></a></p>
+<figcaption>中工首頁</figcaption>
 </figure>
 </div>
 <div style="page-break-after: always;"></div>
@@ -111,44 +157,236 @@ ul.task-list li input[type="checkbox"] {
 <h2 data-number="1.2" class="anchored" data-anchor-id="輸入帳號密碼"><span class="header-section-number">1.2</span> 輸入帳號密碼</h2>
 <p>帳號為員工工號，例如: 226178</p>
 <p>預設密碼格式為”bes@工號”，例如: bes@226178</p>
-<div id="fig-539a35d47e664c97a50115a146a7f1bd-2" class="quarto-float quarto-figure quarto-figure-center anchored" height="8cm">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-539a35d47e664c97a50115a146a7f1bd-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/智慧決策平台使用說明/image02.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title=": &nbsp;"><img src="images/智慧決策平台使用說明/image02.png" id="fig-539a35d47e664c97a50115a146a7f1bd-2" style="height:8cm" class="figure-img"></a>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-539a35d47e664c97a50115a146a7f1bd-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-&nbsp;
-</figcaption>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/智慧決策平台使用說明/登入畫面.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="&nbsp;"><img src="images/智慧決策平台使用說明/登入畫面.png" style="height:8cm" alt="&nbsp;" class="figure-img"></a></p>
+<figcaption>&nbsp;</figcaption>
 </figure>
 </div>
 <p>如果無法登入顯示帳號或密碼錯誤，請點擊<strong>忘記密碼</strong>進行驗證並修改密碼後重新登入。</p>
 <div style="page-break-after: always;"></div>
 </section>
-<section id="首頁說明" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="首頁說明"><span class="header-section-number">1.3</span> 首頁說明</h2>
+<section id="section" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="section"><span class="header-section-number">1.3</span> <span class="animate__animated animate__bounce animate__infinite" style="display: inline-block;animation-duration:4s">首頁說明</span></h2>
 <p>首頁右上角點擊選單可切換全螢幕模式，有較好的瀏覽體驗。</p>
-<div id="fig-539a35d47e664c97a50115a146a7f1bd-3" class="quarto-float quarto-figure quarto-figure-center anchored" height="8cm">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-539a35d47e664c97a50115a146a7f1bd-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/智慧決策平台使用說明/image03.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title=": &nbsp;"><img src="images/智慧決策平台使用說明/image03.png" id="fig-539a35d47e664c97a50115a146a7f1bd-3" style="height:8cm" class="figure-img"></a>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-539a35d47e664c97a50115a146a7f1bd-3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-&nbsp;
-</figcaption>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/智慧決策平台使用說明/平台首頁.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="&nbsp;"><img src="images/智慧決策平台使用說明/平台首頁.png" style="height:8cm" alt="&nbsp;" class="figure-img"></a></p>
+<figcaption>&nbsp;</figcaption>
 </figure>
 </div>
 <p>全螢幕模式</p>
-<div id="fig-539a35d47e664c97a50115a146a7f1bd-4" class="quarto-float quarto-figure quarto-figure-center anchored" height="8cm">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-539a35d47e664c97a50115a146a7f1bd-4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/智慧決策平台使用說明/image04.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title=": &nbsp;"><img src="images/智慧決策平台使用說明/image04.png" id="fig-539a35d47e664c97a50115a146a7f1bd-4" style="height:8cm" class="figure-img"></a>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-539a35d47e664c97a50115a146a7f1bd-4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-&nbsp;
-</figcaption>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/智慧決策平台使用說明/平台全螢幕.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="&nbsp;"><img src="images/智慧決策平台使用說明/平台全螢幕.png" style="height:8cm" alt="&nbsp;" class="figure-img"></a></p>
+<figcaption>&nbsp;</figcaption>
 </figure>
 </div>
 </section>
+</section>
+<section id="plugin-文字動畫" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> plugin-文字動畫</h1>
+<ul>
+<li><p><span class="animate__animated animate__hinge animate__delay-3s animate__infinite" style="display: inline-block;animation-duration:4s">hinge</span></p></li>
+</ul>
+</section>
+<section id="使用r語言" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> 使用R語言</h1>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource {r} number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a href="#cb1-1"></a>library(ggplot2)</span>
+<span id="cb1-2"><a href="#cb1-2"></a>dat &lt;- data.frame(</span>
+<span id="cb1-3"><a href="#cb1-3"></a>  cond = rep(c("A", "B"), each = 10),</span>
+<span id="cb1-4"><a href="#cb1-4"></a>  xvar = 1:20 + rnorm(20, sd = 3),</span>
+<span id="cb1-5"><a href="#cb1-5"></a>  yvar = 1:20 + rnorm(20, sd = 3)</span>
+<span id="cb1-6"><a href="#cb1-6"></a>)</span>
+<span id="cb1-7"><a href="#cb1-7"></a></span>
+<span id="cb1-8"><a href="#cb1-8"></a>ggplot(dat, aes(x = xvar, y = yvar)) +</span>
+<span id="cb1-9"><a href="#cb1-9"></a>  geom_point(shape = 1) +</span>
+<span id="cb1-10"><a href="#cb1-10"></a>  geom_smooth()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="使用python" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> 使用Python</h1>
+<div id="cell-fig-polar" class="cell" data-execution_count="1">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb2-3"><a href="#cb2-3"></a></span>
+<span id="cb2-4"><a href="#cb2-4"></a>r <span class="op">=</span> np.arange(<span class="dv">0</span>, <span class="dv">2</span>, <span class="fl">0.01</span>)</span>
+<span id="cb2-5"><a href="#cb2-5"></a>theta <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> r</span>
+<span id="cb2-6"><a href="#cb2-6"></a>fig, ax <span class="op">=</span> plt.subplots(</span>
+<span id="cb2-7"><a href="#cb2-7"></a>    subplot_kw<span class="op">=</span>{<span class="st">'projection'</span>: <span class="st">'polar'</span>}</span>
+<span id="cb2-8"><a href="#cb2-8"></a>)</span>
+<span id="cb2-9"><a href="#cb2-9"></a>ax.plot(theta, r)</span>
+<span id="cb2-10"><a href="#cb2-10"></a>ax.set_rticks([<span class="fl">0.5</span>, <span class="dv">1</span>, <span class="fl">1.5</span>, <span class="dv">2</span>])</span>
+<span id="cb2-11"><a href="#cb2-11"></a>ax.grid(<span class="va">True</span>)</span>
+<span id="cb2-12"><a href="#cb2-12"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div id="fig-polar" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-polar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="智慧決策平台使用說明_files/figure-html/fig-polar-output-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Figure&nbsp;1: A line plot on a polar axis"><img src="智慧決策平台使用說明_files/figure-html/fig-polar-output-1.png" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-polar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: A line plot on a polar axis
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="代碼輸出" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> 代碼輸出</h1>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1"></a><span class="in">```{python}</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="in">1 + 1</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1"></a><span class="co">---</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="an">title:</span><span class="co"> "My document"</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="co">---</span></span>
+<span id="cb4-4"><a href="#cb4-4"></a></span>
+<span id="cb4-5"><a href="#cb4-5"></a>Some markdown content.</span>
+<span id="cb4-6"><a href="#cb4-6"></a></span>
+<span id="cb4-7"><a href="#cb4-7"></a><span class="in">```{python}</span></span>
+<span id="cb4-8"><a href="#cb4-8"></a><span class="in">1 + 1</span></span>
+<span id="cb4-9"><a href="#cb4-9"></a><span class="in">```</span></span>
+<span id="cb4-10"><a href="#cb4-10"></a></span>
+<span id="cb4-11"><a href="#cb4-11"></a>Some additional markdown content.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="callout" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> callout</h1>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Note that there are five types of callouts, including: <code>note</code>, <code>warning</code>, <code>important</code>, <code>tip</code>, and <code>caution</code>.</p>
+</div>
+</div>
+</section>
+<section id="輸出表格" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> 輸出表格</h1>
+<div id="73350072" class="cell" data-execution_count="2">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a><span class="im">import</span> code.FUN <span class="im">as</span> FUN</span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="im">from</span> itables <span class="im">import</span> show</span>
+<span id="cb5-3"><a href="#cb5-3"></a>df <span class="op">=</span> FUN.progress_table()</span>
+<span id="cb5-4"><a href="#cb5-4"></a></span>
+<span id="cb5-5"><a href="#cb5-5"></a>show(df, searching<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb5-6"><a href="#cb5-6"></a></span>
+<span id="cb5-7"><a href="#cb5-7"></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<style>.itables table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables table th {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.itables thead input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.itables tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+</style>
+<div class="itables">
+
+<table id="b49082c4-b1b1-411c-aa51-33c2ac470b98" class="display nowrap table table-sm table-striped small" data-quarto-postprocess="true">
+<thead>
+<tr class="header" style="text-align: right;">
+<th data-quarto-table-cell-role="th">NAME</th>
+<th data-quarto-table-cell-role="th">AGE</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Loading... (need <a href="https://mwouts.github.io/itables/troubleshooting.html">help</a>?)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
+<script type="module">
+    // Import jquery and DataTable
+    import 'https://code.jquery.com/jquery-3.6.0.min.js';
+    import dt from 'https://cdn.datatables.net/1.12.1/js/jquery.dataTables.mjs';
+    dt($);
+
+    // Define the table data
+    const data = [["BENNIE", 20], ["JOHN", 30]];
+
+    // Define the dt_args
+    let dt_args = {"searching": false, "order": [], "dom": "t"};
+    dt_args["data"] = data;
+
+    $(document).ready(function () {
+        
+        $('#b49082c4-b1b1-411c-aa51-33c2ac470b98').DataTable(dt_args);
+    });
+</script>
+</div>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="2">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">NAME</th>
+<th data-quarto-table-cell-role="th">AGE</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>BENNIE</td>
+<td>20</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>JOHN</td>
+<td>30</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="r-flextable-docx表格輸出" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> R flextable docx表格輸出</h1>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource {r} number-lines code-with-copy"><code class="sourceCode"><span id="cb6-1"><a href="#cb6-1"></a>library(flextable)</span>
+<span id="cb6-2"><a href="#cb6-2"></a>ft &lt;- flextable(airquality[sample.int(10), ])</span>
+<span id="cb6-3"><a href="#cb6-3"></a>ft &lt;- add_header_row(ft,</span>
+<span id="cb6-4"><a href="#cb6-4"></a>  colwidths = c(4, 2),</span>
+<span id="cb6-5"><a href="#cb6-5"></a>  values = c("Air quality", "Time")</span>
+<span id="cb6-6"><a href="#cb6-6"></a>)</span>
+<span id="cb6-7"><a href="#cb6-7"></a>ft &lt;- theme_vanilla(ft)</span>
+<span id="cb6-8"><a href="#cb6-8"></a>ft &lt;- add_footer_lines(ft, "Daily air quality measurements in New York, May to September 1973.")</span>
+<span id="cb6-9"><a href="#cb6-9"></a>ft &lt;- color(ft, part = "footer", color = "#666666")</span>
+<span id="cb6-10"><a href="#cb6-10"></a>ft &lt;- set_caption(ft, caption = "New York Air Quality Measurements")</span>
+<span id="cb6-11"><a href="#cb6-11"></a>ft</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<!-- -->
+
 </section>
 
 </main>
@@ -235,13 +473,62 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
     });
     clipboardModal.on('success', onCopySuccess);
+  }
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
@@ -347,7 +634,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -572,9 +858,150 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>
+</script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb7" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1"></a><span class="co">---</span></span>
+<span id="cb7-2"><a href="#cb7-2"></a><span class="an">title:</span><span class="co"> |</span></span>
+<span id="cb7-3"><a href="#cb7-3"></a><span class="co">  中華工程-影音即時指揮中心 \</span></span>
+<span id="cb7-4"><a href="#cb7-4"></a><span class="co">  智慧決策平台</span></span>
+<span id="cb7-5"><a href="#cb7-5"></a><span class="an">subtitle:</span><span class="co"> 使用說明手冊</span></span>
+<span id="cb7-6"><a href="#cb7-6"></a><span class="co"># formats: html, docx, pdf</span></span>
+<span id="cb7-7"><a href="#cb7-7"></a><span class="an">format:</span><span class="co"> docx</span></span>
+<span id="cb7-8"><a href="#cb7-8"></a><span class="an">jupyter:</span><span class="co"> python3</span></span>
+<span id="cb7-9"><a href="#cb7-9"></a><span class="co">---</span></span>
+<span id="cb7-10"><a href="#cb7-10"></a></span>
+<span id="cb7-11"><a href="#cb7-11"></a>{{&lt; pagebreak &gt;}}</span>
+<span id="cb7-12"><a href="#cb7-12"></a></span>
+<span id="cb7-13"><a href="#cb7-13"></a><span class="fu"># 登入說明</span></span>
+<span id="cb7-14"><a href="#cb7-14"></a></span>
+<span id="cb7-15"><a href="#cb7-15"></a><span class="fu">## 由中華工程首頁左側導覽進入智慧決策平台。</span></span>
+<span id="cb7-16"><a href="#cb7-16"></a></span>
+<span id="cb7-17"><a href="#cb7-17"></a><span class="al">![中工首頁](images/智慧決策平台使用說明/中工首頁.png)</span>{height="8cm"}</span>
+<span id="cb7-18"><a href="#cb7-18"></a></span>
+<span id="cb7-19"><a href="#cb7-19"></a>{{&lt; pagebreak &gt;}}</span>
+<span id="cb7-20"><a href="#cb7-20"></a></span>
+<span id="cb7-21"><a href="#cb7-21"></a><span class="fu">## 輸入帳號密碼</span></span>
+<span id="cb7-22"><a href="#cb7-22"></a></span>
+<span id="cb7-23"><a href="#cb7-23"></a>帳號為員工工號，例如: 226178</span>
+<span id="cb7-24"><a href="#cb7-24"></a></span>
+<span id="cb7-25"><a href="#cb7-25"></a>預設密碼格式為"bes\@工號"，例如: bes\@226178</span>
+<span id="cb7-26"><a href="#cb7-26"></a></span>
+<span id="cb7-27"><a href="#cb7-27"></a><span class="al">![&amp;nbsp;](images/智慧決策平台使用說明/登入畫面.png)</span>{height="8cm"}</span>
+<span id="cb7-28"><a href="#cb7-28"></a></span>
+<span id="cb7-29"><a href="#cb7-29"></a>如果無法登入顯示帳號或密碼錯誤，請點擊**忘記密碼**進行驗證並修改密碼後重新登入。</span>
+<span id="cb7-30"><a href="#cb7-30"></a></span>
+<span id="cb7-31"><a href="#cb7-31"></a>{{&lt; pagebreak &gt;}}</span>
+<span id="cb7-32"><a href="#cb7-32"></a></span>
+<span id="cb7-33"><a href="#cb7-33"></a><span class="fu">## {{&lt; animate bounce "首頁說明" repeat=infinite duration=4s &gt;}}</span></span>
+<span id="cb7-34"><a href="#cb7-34"></a></span>
+<span id="cb7-35"><a href="#cb7-35"></a>首頁右上角點擊選單可切換全螢幕模式，有較好的瀏覽體驗。</span>
+<span id="cb7-36"><a href="#cb7-36"></a></span>
+<span id="cb7-37"><a href="#cb7-37"></a><span class="al">![&amp;nbsp;](images/智慧決策平台使用說明/平台首頁.png)</span>{height="8cm"}</span>
+<span id="cb7-38"><a href="#cb7-38"></a></span>
+<span id="cb7-39"><a href="#cb7-39"></a>全螢幕模式</span>
+<span id="cb7-40"><a href="#cb7-40"></a></span>
+<span id="cb7-41"><a href="#cb7-41"></a><span class="al">![&amp;nbsp;](images/智慧決策平台使用說明/平台全螢幕.png)</span>{height="8cm"}</span>
+<span id="cb7-42"><a href="#cb7-42"></a></span>
+<span id="cb7-43"><a href="#cb7-43"></a><span class="fu"># plugin-文字動畫</span></span>
+<span id="cb7-44"><a href="#cb7-44"></a></span>
+<span id="cb7-45"><a href="#cb7-45"></a><span class="ss">- </span>{{&lt; animate hinge "hinge" delay=3s duration=4s repeat=infinite &gt;}}</span>
+<span id="cb7-46"><a href="#cb7-46"></a></span>
+<span id="cb7-47"><a href="#cb7-47"></a><span class="fu"># 使用R語言</span></span>
+<span id="cb7-48"><a href="#cb7-48"></a></span>
+<span id="cb7-51"><a href="#cb7-51"></a><span class="in">```{r}</span></span>
+<span id="cb7-52"><a href="#cb7-52"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb7-53"><a href="#cb7-53"></a>dat <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb7-54"><a href="#cb7-54"></a>  <span class="at">cond =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>), <span class="at">each =</span> <span class="dv">10</span>),</span>
+<span id="cb7-55"><a href="#cb7-55"></a>  <span class="at">xvar =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">20</span> <span class="sc">+</span> <span class="fu">rnorm</span>(<span class="dv">20</span>, <span class="at">sd =</span> <span class="dv">3</span>),</span>
+<span id="cb7-56"><a href="#cb7-56"></a>  <span class="at">yvar =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">20</span> <span class="sc">+</span> <span class="fu">rnorm</span>(<span class="dv">20</span>, <span class="at">sd =</span> <span class="dv">3</span>)</span>
+<span id="cb7-57"><a href="#cb7-57"></a>)</span>
+<span id="cb7-58"><a href="#cb7-58"></a></span>
+<span id="cb7-59"><a href="#cb7-59"></a><span class="fu">ggplot</span>(dat, <span class="fu">aes</span>(<span class="at">x =</span> xvar, <span class="at">y =</span> yvar)) <span class="sc">+</span></span>
+<span id="cb7-60"><a href="#cb7-60"></a>  <span class="fu">geom_point</span>(<span class="at">shape =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb7-61"><a href="#cb7-61"></a>  <span class="fu">geom_smooth</span>()</span>
+<span id="cb7-62"><a href="#cb7-62"></a><span class="in">```</span></span>
+<span id="cb7-63"><a href="#cb7-63"></a></span>
+<span id="cb7-64"><a href="#cb7-64"></a><span class="fu"># 使用Python</span></span>
+<span id="cb7-65"><a href="#cb7-65"></a></span>
+<span id="cb7-68"><a href="#cb7-68"></a><span class="in">```{python}</span></span>
+<span id="cb7-69"><a href="#cb7-69"></a><span class="co"># | label: fig-polar</span></span>
+<span id="cb7-70"><a href="#cb7-70"></a><span class="co"># | fig-cap: "A line plot on a polar axis"</span></span>
+<span id="cb7-71"><a href="#cb7-71"></a></span>
+<span id="cb7-72"><a href="#cb7-72"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb7-73"><a href="#cb7-73"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb7-74"><a href="#cb7-74"></a></span>
+<span id="cb7-75"><a href="#cb7-75"></a>r <span class="op">=</span> np.arange(<span class="dv">0</span>, <span class="dv">2</span>, <span class="fl">0.01</span>)</span>
+<span id="cb7-76"><a href="#cb7-76"></a>theta <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> r</span>
+<span id="cb7-77"><a href="#cb7-77"></a>fig, ax <span class="op">=</span> plt.subplots(</span>
+<span id="cb7-78"><a href="#cb7-78"></a>    subplot_kw<span class="op">=</span>{<span class="st">'projection'</span>: <span class="st">'polar'</span>}</span>
+<span id="cb7-79"><a href="#cb7-79"></a>)</span>
+<span id="cb7-80"><a href="#cb7-80"></a>ax.plot(theta, r)</span>
+<span id="cb7-81"><a href="#cb7-81"></a>ax.set_rticks([<span class="fl">0.5</span>, <span class="dv">1</span>, <span class="fl">1.5</span>, <span class="dv">2</span>])</span>
+<span id="cb7-82"><a href="#cb7-82"></a>ax.grid(<span class="va">True</span>)</span>
+<span id="cb7-83"><a href="#cb7-83"></a>plt.show()</span>
+<span id="cb7-84"><a href="#cb7-84"></a><span class="in">```</span></span>
+<span id="cb7-85"><a href="#cb7-85"></a></span>
+<span id="cb7-86"><a href="#cb7-86"></a><span class="fu"># 代碼輸出</span></span>
+<span id="cb7-87"><a href="#cb7-87"></a></span>
+<span id="cb7-88"><a href="#cb7-88"></a><span class="in">```{python}</span></span>
+<span id="cb7-89"><a href="#cb7-89"></a><span class="in">1 + 1</span></span>
+<span id="cb7-90"><a href="#cb7-90"></a><span class="in">```</span></span>
+<span id="cb7-91"><a href="#cb7-91"></a></span>
+<span id="cb7-92"><a href="#cb7-92"></a><span class="in">````</span></span>
+<span id="cb7-93"><a href="#cb7-93"></a><span class="in">---</span></span>
+<span id="cb7-94"><a href="#cb7-94"></a><span class="in">title: "My document"</span></span>
+<span id="cb7-95"><a href="#cb7-95"></a><span class="in">---</span></span>
+<span id="cb7-96"><a href="#cb7-96"></a></span>
+<span id="cb7-97"><a href="#cb7-97"></a><span class="in">Some markdown content.</span></span>
+<span id="cb7-98"><a href="#cb7-98"></a></span>
+<span id="cb7-99"><a href="#cb7-99"></a><span class="in">```{python}</span></span>
+<span id="cb7-100"><a href="#cb7-100"></a><span class="in">1 + 1</span></span>
+<span id="cb7-101"><a href="#cb7-101"></a><span class="in">```</span></span>
+<span id="cb7-102"><a href="#cb7-102"></a></span>
+<span id="cb7-103"><a href="#cb7-103"></a><span class="in">Some additional markdown content.</span></span>
+<span id="cb7-104"><a href="#cb7-104"></a></span>
+<span id="cb7-105"><a href="#cb7-105"></a><span class="in">````</span></span>
+<span id="cb7-106"><a href="#cb7-106"></a></span>
+<span id="cb7-107"><a href="#cb7-107"></a><span class="fu"># callout</span></span>
+<span id="cb7-108"><a href="#cb7-108"></a></span>
+<span id="cb7-109"><a href="#cb7-109"></a>::: {.callout-note}</span>
+<span id="cb7-110"><a href="#cb7-110"></a>Note that there are five types of callouts, including:</span>
+<span id="cb7-111"><a href="#cb7-111"></a><span class="in">`note`</span>, <span class="in">`warning`</span>, <span class="in">`important`</span>, <span class="in">`tip`</span>, and <span class="in">`caution`</span>.</span>
+<span id="cb7-112"><a href="#cb7-112"></a>:::</span>
+<span id="cb7-113"><a href="#cb7-113"></a></span>
+<span id="cb7-114"><a href="#cb7-114"></a><span class="fu"># 輸出表格</span></span>
+<span id="cb7-115"><a href="#cb7-115"></a></span>
+<span id="cb7-118"><a href="#cb7-118"></a><span class="in">```{python}</span></span>
+<span id="cb7-119"><a href="#cb7-119"></a><span class="im">import</span> code.FUN <span class="im">as</span> FUN</span>
+<span id="cb7-120"><a href="#cb7-120"></a><span class="im">from</span> itables <span class="im">import</span> show</span>
+<span id="cb7-121"><a href="#cb7-121"></a>df <span class="op">=</span> FUN.progress_table()</span>
+<span id="cb7-122"><a href="#cb7-122"></a></span>
+<span id="cb7-123"><a href="#cb7-123"></a>show(df, searching<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb7-124"><a href="#cb7-124"></a></span>
+<span id="cb7-125"><a href="#cb7-125"></a>df</span>
+<span id="cb7-126"><a href="#cb7-126"></a></span>
+<span id="cb7-127"><a href="#cb7-127"></a><span class="in">```</span></span>
+<span id="cb7-128"><a href="#cb7-128"></a></span>
+<span id="cb7-129"><a href="#cb7-129"></a><span class="fu"># R flextable docx表格輸出</span></span>
+<span id="cb7-130"><a href="#cb7-130"></a></span>
+<span id="cb7-133"><a href="#cb7-133"></a><span class="in">```{r}</span></span>
+<span id="cb7-134"><a href="#cb7-134"></a><span class="fu">library</span>(flextable)</span>
+<span id="cb7-135"><a href="#cb7-135"></a>ft <span class="ot">&lt;-</span> <span class="fu">flextable</span>(airquality[<span class="fu">sample.int</span>(<span class="dv">10</span>), ])</span>
+<span id="cb7-136"><a href="#cb7-136"></a>ft <span class="ot">&lt;-</span> <span class="fu">add_header_row</span>(ft,</span>
+<span id="cb7-137"><a href="#cb7-137"></a>  <span class="at">colwidths =</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">2</span>),</span>
+<span id="cb7-138"><a href="#cb7-138"></a>  <span class="at">values =</span> <span class="fu">c</span>(<span class="st">"Air quality"</span>, <span class="st">"Time"</span>)</span>
+<span id="cb7-139"><a href="#cb7-139"></a>)</span>
+<span id="cb7-140"><a href="#cb7-140"></a>ft <span class="ot">&lt;-</span> <span class="fu">theme_vanilla</span>(ft)</span>
+<span id="cb7-141"><a href="#cb7-141"></a>ft <span class="ot">&lt;-</span> <span class="fu">add_footer_lines</span>(ft, <span class="st">"Daily air quality measurements in New York, May to September 1973."</span>)</span>
+<span id="cb7-142"><a href="#cb7-142"></a>ft <span class="ot">&lt;-</span> <span class="fu">color</span>(ft, <span class="at">part =</span> <span class="st">"footer"</span>, <span class="at">color =</span> <span class="st">"#666666"</span>)</span>
+<span id="cb7-143"><a href="#cb7-143"></a>ft <span class="ot">&lt;-</span> <span class="fu">set_caption</span>(ft, <span class="at">caption =</span> <span class="st">"New York Air Quality Measurements"</span>)</span>
+<span id="cb7-144"><a href="#cb7-144"></a>ft</span>
+<span id="cb7-145"><a href="#cb7-145"></a><span class="in">```</span></span>
+<span id="cb7-146"><a href="#cb7-146"></a></span>
+<span id="cb7-147"><a href="#cb7-147"></a></span>
+</code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","loop":false,"selector":".lightbox","closeEffect":"zoom","descPosition":"bottom"});
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {
